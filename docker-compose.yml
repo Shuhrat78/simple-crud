@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:12.2-alpine
+    container_name: ${PROJECT_NAME}-db
+    ports:
+      - ${DB_PORT}:5432
+    restart: unless-stopped
+    volumes:
+      - ./docker/psql:/var/lib/postgresql:cached      
+    environment:
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}

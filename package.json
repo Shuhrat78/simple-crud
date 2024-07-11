@@ -1,0 +1,33 @@
+{
+  "name": "simple-crud",
+  "version": "1.0.0",
+  "description": "crud",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "mig": "npx prisma migrate dev --name init --preview-feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuhrat-jon/simple-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuhrat-jon/simple-crud/issues"
+  },
+  "homepage": "https://github.com/shuhrat-jon/simple-crud#readme",
+  "devDependencies": {
+    "@prisma/cli": "2.13.0",
+    "@types/body-parser": "1.19.0",
+    "@types/express": "4.17.9",
+    "nodemon": "^2.0.6",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.13.0",
+    "@types/node": "14.14.13",
+    "body-parser": "1.19.0",
+    "express": "4.17.1"
+  }
+}
